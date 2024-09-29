@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Projet - L'Étoile de Terre</title>
+    <!-- Intégration de la feuille de style principale -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation avec menu responsive -->
+    <nav>
+        <div class="logo">
+            <img src="images/logoedt.png" alt="L'Étoile de Terre">
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="projet.html">Le projet</a></li>
+            <li><a href="collectif.html">Le collectif</a></li>
+            <li><a href="architecture.html">L'architecture</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="https://us21.campaign-archive.com/home/?u=14c9bcc99f8c0db23cc598723&id=d79662e79e">Nos actualités</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section Image de Projet -->
+    <section class="projet-hero">
+        <div class="projet-hero-image">
+            <img src="images/projet-image.webp" alt="Image du projet L'Étoile de Terre">
+        </div>
+    </section>
+
+    <!-- Section Projet -->
+    <section id="projet" class="projet-section">
+        <div class="container">
+            <h1>Le Projet L'Étoile de Terre</h1>
+            <p>Le projet <strong>L’Étoile de Terre</strong> est bien plus qu'un simple projet d'habitat. C’est un mode de vie, un engagement envers la planète et un espace dédié aux relations humaines.</p>
+
+            <!-- Vision -->
+            <h2>Notre Vision</h2>
+            <p>
+                L’Étoile de Terre repose sur deux dimensions essentielles qui façonnent notre manière de vivre et d’interagir avec le monde : une dimension <strong>sociale</strong> et une dimension <strong>écologique</strong>.
+            </p>
+            <h3>Dimension Sociale</h3>
+            <p>
+                Nous croyons que la société contemporaine a perdu son équilibre en privilégiant l’individualisme et le matérialisme. Nous rêvons d’une alternative où la solidarité et le vivre-ensemble sont réhabilités, où chacun trouve sa place et participe à l’effort collectif. Notre ambition est de créer un environnement intergénérationnel, accueillant des personnes aux horizons divers, afin que chacun puisse transmettre, apprendre et grandir avec les autres. L’Étoile de Terre est un espace où les échanges de savoirs et de compétences se font naturellement, dans une dynamique de partage et d’enrichissement mutuel.
+            </p>
+            <h3>Dimension Écologique</h3>
+            <p>
+                La crise climatique nous appelle à agir. Nous nous engageons à réduire notre impact environnemental par des choix concrets : utilisation de matériaux recyclés et biosourcés dans la construction, réduction des déchets, pratiques de permaculture, recours à la mobilité douce. Mais l’écologie ne se limite pas aux murs que nous construisons ; elle guide notre quotidien. Nos jardins partagés, la mutualisation des ressources et les activités que nous menons ensemble incarnent notre volonté de réinventer un mode de vie respectueux de l’environnement.
+            </p>
+
+            <!-- Valeurs -->
+            <h2>Nos Valeurs</h2>
+            <p>Nous partageons sept valeurs fondamentales qui nous unissent et guident nos actions :</p>
+            <ul>
+                <li><strong>Solidarité :</strong> L’entraide est au cœur de notre projet.</li>
+                <li><strong>Durabilité :</strong> Nous visons un projet pérenne.</li>
+                <li><strong>Mutualisation :</strong> Nous mettons en commun nos ressources.</li>
+                <li><strong>Écologie :</strong> La préservation de l’environnement guide chacune de nos décisions.</li>
+                <li><strong>Ouverture :</strong> Nous construisons des ponts avec la communauté environnante.</li>
+                <li><strong>Coopération :</strong> Travailler ensemble est notre philosophie.</li>
+                <li><strong>Convivialité :</strong> Le plaisir de se retrouver anime notre quotidien.</li>
+            </ul>
+
+            <!-- Gouvernance -->
+            <h2>Notre Gouvernance</h2>
+            <p>L’Étoile de Terre adopte un modèle de gouvernance horizontale, garantissant une voix égale pour chaque foyer.</p>
+
+            <!-- Ouverture sur le territoire -->
+            <h2>L’Ouverture sur le territoire</h2>
+            <p>Nous souhaitons nous inscrire dans la vie locale, participer aux actions et associations existantes.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <p>© 2024 L'Étoile de Terre. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Script pour le menu responsive -->
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
+

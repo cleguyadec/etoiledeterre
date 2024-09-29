@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Étoile de Terre</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <img src="images/logoedt.png" alt="L'Étoile de Terre">
+        </div>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="menu" id="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="projet.html">Le projet</a></li>
+            <li><a href="collectif.html">Le collectif</a></li>
+            <li><a href="architecture.html">L'architecture</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="https://us21.campaign-archive.com/home/?u=14c9bcc99f8c0db23cc598723&id=d79662e79e">Nos actualités</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section d'accueil -->
+    <header class="hero">
+        <div class="hero-text">
+            <h1>L'Étoile de Terre</h1>
+            <p><i>Construire, décider et agir collectivement pour nourrir un lieu ouvert, sobre et résilient.</p>
+            <p>Tisser des liens localement, partager dans le respect du vivant, la convivialité et la joie.</i></p>
+        </div>
+    </header>
+
+    <!-- Nouvelle Section "Projet et Manifeste" -->
+    <section id="projet-manifeste" class="projet-manifeste-section">
+        <div class="container">
+            <div class="project-info">
+                <h2>Habitat participatif : projet et manifeste</h2>
+                <p>Nous sommes un collectif de 4 foyers porteurs d’un projet d’habitat participatif en milieu semi-rural à Puy-Guillaume (63).</p>
+                <p>Les travaux ont débuté en juillet 2024 – dont une partie sera en auto-construction.</p>
+                <a href="projet.html" class="btn">En savoir plus</a>
+            </div>
+            <div class="project-image">
+                <img src="images/habitat.webp" alt="Illustration du projet de construction">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section sur le terrain -->
+    <section id="terrain" class="terrain-section">
+        <div class="container terrain-content">
+            <div class="image-carousel">
+                <div class="carousel">
+                    <img src="images/terrain1.jpeg" alt="Vue du terrain 1">
+                    <img src="images/terrain2.jpeg" alt="Vue du terrain 2">
+                    <img src="images/terrain3.jpeg" alt="Vue du terrain 3">
+                    <img src="images/terrain4.jpeg" alt="Vue du terrain 4">
+                </div>
+                <div class="carousel-controls">
+                    <span class="prev">&#10094;</span>
+                    <span class="next">&#10095;</span>
+                </div>
+            </div>
+            <div class="terrain-description">
+                <h2>Le terrain</h2>
+                <p>Altitude 290m, plat</p>
+                <p>Une surface de 8500 m², zone constructible de 5200 m²</p>
+                <p>Ancienne scierie démontée (réutilisation des matériaux)</p>
+                <p>6 à 7 logements prévus (dont 4 dans la première phase de construction).</p>
+                <p><strong>Espaces partagés (200 m²)</strong> : salles communes, conserverie, bibliothèque, chambres d’ami, atelier, buanderie, garage à vélos, jardin, salle de jeux.</p>
+                <p><strong>Habitations (50 à 100m² selon la composition des foyers)</strong> : bâtiment neuf, en auto-construction partiellement, passif ou bioclimatique (performance thermique) en duplex.</p>
+                <a href="architecture.html" class="btn">En savoir plus sur l'architecture</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section pour rejoindre le projet -->
+    <section id="contact" class="contact-section">
+        <div class="container contact-content">
+            <div class="contact-text">
+                <h2>Rejoignez-nous</h2>
+                <p>Nous recherchons encore 3 foyers sans critères de composition ou d’âge et envisageons la possibilité de partager nos espaces avec d’autres personnes et de mettre en place des activités qui pourront aider à nous implanter et à cimenter nos liens dans la commune : ateliers, salle polyvalente, chambres/tables d’hôtes, épicerie, activités culturelles, etc.</p>
+                <p><strong>Adresse :</strong><br>31 bis, rue Ernest Laroche, Puy-Guillaume</p>
+                <p><strong>Téléphone :</strong><br>06 26 72 56 54</p>
+                <p><strong>E-mail :</strong><br><a href="mailto:contact-habitat@mailo.com">contact-habitat@mailo.com</a></p>
+            </div>
+            <div class="contact-map">
+            
+                <div style="width: 100%"><iframe width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=3.4685039520263676%2C45.95470027265432%2C3.4993171691894536%2C45.97140585856473&amp;layer=mapnik&amp;marker=45.96305369527982%2C3.48391056060791" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=45.96305&amp;mlon=3.48391#map=15/45.96305/3.48391">Afficher une carte plus grande</a></small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <p>© 2024 L'Étoile de Terre. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Script pour le carrousel -->
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("carousel")[0].children;
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 4000); // Change image every 4 seconds
+        }
+
+        document.querySelector('.prev').addEventListener('click', () => changeSlide(-1));
+        document.querySelector('.next').addEventListener('click', () => changeSlide(1));
+
+        function changeSlide(n) {
+            slideIndex += n;
+            showSlides();
+        }
+
+        // Menu responsive
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+            const icon = menuToggle.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+    </script>
+</body>
+</html>
+

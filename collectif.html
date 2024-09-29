@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Collectif - L'Étoile de Terre</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <img src="images/logoedt.png" alt="L'Étoile de Terre">
+        </div>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="menu" id="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="projet.html">Le projet</a></li>
+            <li><a href="collectif.html">Le collectif</a></li>
+            <li><a href="architecture.html">L'architecture</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="https://us21.campaign-archive.com/home/?u=14c9bcc99f8c0db23cc598723&id=d79662e79e">Nos actualités</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section collectif -->
+    <section id="collectif" class="collectif-section">
+        <div class="container-collectif">
+            <h1>Le Collectif</h1>
+            <p>Découvrez les membres du collectif qui, chacun avec ses compétences, ses envies et son histoire, façonnent le projet L’Étoile de Terre.</p>
+
+            <div class="members-grid">
+                <!-- Marjolaine -->
+                <div class="member">
+                    <div class="member-photo">
+                        <img src="images/marjo_david.png" alt="Photo de Marjolaine">
+                    </div>
+                    <div class="member-info">
+                        <h2>Marjolaine et David</h2>
+                        <p>Marjolaine est responsable associative salariée et engagée bénévolement dans plusieurs projets. Elle a déjà vécu en habitat partagé à Lille et souhaite s’investir dans les activités associatives et culturelles du lieu et plus largement du territoire. David, ancien commerçant reconverti dans le bâtiment (plomberie notamment), il s’implique à temps plein dans le projet : auto-construction, rénovation, maintenance. Il souhaite aussi développer des dispositifs de résilience : production électrique in-situ, récupération et traitement des eaux, agriculture vivrière.</p>
+                    </div>
+                </div>
+
+                <!-- Laura, Clément et leurs enfants -->
+                <div class="member">
+                    <div class="member-photo">
+                        <img src="images/laura_clement.jpeg" alt="Photo de Laura et Clément">
+                    </div>
+                    <div class="member-info">
+                        <h2>Laura, Clément, June, Marius, Agathe</h2>
+                        <p>Laura est en reconversion professionnelle (ancienne urologue) et adore le bricolage et le yoga. Elle souhaite développer des activités comme un café associatif ou des ateliers créatifs. Clément, ingénieur en biologie, est passionné par le bricolage et l’animation de groupe. Ensemble, ils forment une famille recomposée de 5 personnes et s’investissent dans la co-construction du lieu.</p>
+                    </div>
+                </div>
+
+                <!-- Mélia -->
+                <div class="member">
+                    <div class="member-photo">
+                        <img src="images/melia.png" alt="Photo de Mélia">
+                    </div>
+                    <div class="member-info">
+                        <h2>Mélia</h2>
+                        <p>Architecte DPLG et urbaniste constructeure, Mélia est membre fondatrice du collectif Les Saprophytes. Spécialiste des chantiers participatifs, elle a deux enfants. Passionnée par les Communs, elle apporte son expertise dans la coordination de projets communautaires, la gestion culturelle et l'aménagement durable.</p>
+                    </div>
+                </div>
+
+                <!-- Natacha -->
+                <div class="member">
+                    <div class="member-photo">
+                        <img src="images/natacha.png" alt="Photo de Natacha">
+                    </div>
+                    <div class="member-info">
+                        <h2>Natacha</h2>
+                        <p>Nouvelle arrivée dans le projet, Natacha est très investie dans la vie associative. Désormais prête à s’installer en Auvergne, elle compte utiliser son expérience de travail en groupe pour contribuer au développement du collectif, tout en profitant des paysages à vélo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <p>© 2024 L'Étoile de Terre. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Script pour le menu responsive -->
+    <script>
+        // Sélection des éléments du menu et du bouton de toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+
+        // Afficher/masquer le menu au clic sur le bouton menuToggle
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+            const icon = menuToggle.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+    </script>
+</body>
+</html>
+
