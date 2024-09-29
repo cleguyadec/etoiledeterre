@@ -75,7 +75,7 @@ nav {
 
 /* Hero Section */
 .hero {
-    background-image: url('images/hero-background.jpeg'); /* Remplace 'hero-background.jpg' par le nom de ton image */
+    background-image: url('./images/hero-background.jpeg'); /* Remplace 'hero-background.jpg' par le nom de ton image */
     background-size: cover; /* Couvre toute la section */
     background-position: center; /* Centre l'image */
     background-attachment: fixed; /* Rend l'image de fond fixe */
